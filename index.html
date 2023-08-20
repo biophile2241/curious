@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>curious.com</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		
+
+	</style>
+	
+</head>
+
+<body>
+	<header>
+	
+	  <div class="bgimg"> 
+		<div class="nav">
+			     <h1> I'm Curious</h1>
+				 
+					 <div class="container1">
+						 <div class="das"></div>
+						 <div class="das"></div>
+						 <div class="das"></div>
+					 </div> 
+	  
+	
+   				<ul class="navber">
+					<li class="nav-home">
+	     				<a href="" class="nav-link">HOME</a>
+					</li>
+					<li class="nav-item">
+     					<a href="motive.html" target="blank" class="nav-link">MOTIVE</a>
+					</li>
+					<li class="nav-item">
+						<a href="portfolio/admin.html" target="blank" class="nav-link">ADMIN</a>
+					</li>
+					<li class="nav-item">
+					    <a  onClick="loginBox()"id="logi" href="#" class="nav-link">LOGIN</a>				
+					</li>
+				</ul>
+				
+		</div>
+				
+				<section class="animation">
+					<span class="change_content"></span>
+					<p> &nbspa Question ? mark </p>
+				</section>
+				<div class="main_div" >
+					<div class="box1" id="box"style="display: none;">
+					<div class="choice">
+						<input type="submit" style="border-radius: 10px 0px 0px 0px;  background-color:#1c7299; "id="log" onclick="fun1()" value="Login">
+						<input  onclick="fun2()"type="submit"style="border-radius: 0px 10px 0px 0px;"id="sign" value="Signin">
+					</div>
+					<div class="box"style="display:visible;"id='login'>
+						<form action="" method="">
+							<div class="inputBox">
+							  <input type="text" name="username" autocomplete="off" required >
+							  <label>username</label>
+							</div>
+							
+							<div class="inputBox">
+							  <input type="password" name="password" autocomplete="off" required >
+							  <label>password</label>
+							</div>
+							<input type="submit" name="" value="login">
+						</form>.
+					</div>
+				
+					<div class="box"style="display:none"id="signin" >
+						<form action="" method="">
+							<div class="inputBox">
+							  <input type="text" name="username" autocomplete="off" required >
+							  <label>create username</label>
+							</div>
+							
+							<div class="inputBox">
+							  <input type="text" name="password" autocomplete="off" required >
+							  <label>create password</label>
+							</div>
+							<input type="submit" name="" value="Signup">
+						</form>.
+					</div>
+				</div>
+				</div>
+				<script type="text/javascript">
+				
+					var log= document.getElementById('login');
+					var sign= document.getElementById('signin');
+					var lbut= document.getElementById('log');
+					var sbut= document.getElementById('sign');
+				
+					function fun1(){
+						if(log.style.display="none"){
+						log.style.display="block";
+						sign.style.display="none";
+						lbut.style.backgroundColor="#1c7299";
+						sbut.style.backgroundColor="transparent";
+						// lbut.setAttribute("style","border-bottom:0px;");
+						// sbut.setAttribute("style","border-bottom:1px;");
+				
+					}
+					else{
+						
+					}
+					}
+				
+					function fun2(){
+						if(sign.style.display="none"){
+							sign.style.display="block";
+							log.style.display="none";
+							lbut.style.backgroundColor="transparent";
+							sbut.style.backgroundColor="#1c7299";
+						}
+						
+					}
+				
+				
+				</script>
+	 </div>
+	 
+
+	</header>
+
+
+			<div class="menu2">
+				<a href="">  Do You Know</a>
+				<a href="">  Experiances</a>
+				<a href="">  Questions</a>
+				
+			</div>
+
+ <main>
+	<!-- <div class = "name">
+      <div class = "do">Do You Know</div><div class = "mark">??</div>
+      <div class = "line"></div>
+   </div> -->
+   <div class="grid">
+   <div class="content">
+	<div class="writer">
+	   <div class="w_img"></div>
+	   <div class="w_name"><h4>Shivam2241</h4><p6>Shivam Singh</p6></div>
+	</div>
+	   <div class="fact">
+		   <h1>Bird which can Fly with one wing</h1>
+		   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			    Adipisci laboriosam, cumque inventore et exercitationem repudiandae odio impedit neque, 
+				natus eveniet dolore in blanditiis rem suscipit sequi, possimus non quisquam molestias?
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			    Adipisci laboriosam, cumque inventore et exercitationem repudiandae odio impedit neque, 
+				natus eveniet dolore in blanditiis rem suscipit sequi, possimus non quisquam molestias?
+
+		   </p>
+	   </div>
+   </div>
+   <ul class="like">
+	   <li>Like</li>
+	   <li>Dislike</li>
+	   <li>wowww</li>
+   </ul>
+</div>
+ </main>
+
+	 
+
+ 
+ <script>
+	var lbox = document.getElementById("box");
+	function loginBox(){
+        if(lbox.style.display="none"){
+		lbox.style.display="block";
+		}
+		else if(lbox.style.display="block"){
+			lbox.style.display="none";
+		}
+	     
+	}
+		
+</script>
+<script src="app1.js"></script>
+	
+</body>
+</html>

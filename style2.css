@@ -1,0 +1,309 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+	
+}
+@font-face{
+	font-family: main;
+	src: url('mainfont.ttf');
+}
+
+@font-face{
+	font-family: content;
+	src: url('content.otf');
+}
+
+.bgimg{
+    width: 100%;
+    height: 80vh;
+	background-image: url('untitled-1.gif');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	
+
+
+}
+
+.nav{
+	font-family: main;
+	margin-bottom:  -100px;
+	width:100%; height: 8vh;
+	background: rgba(225, 165, 0, 0.9);
+	color:red;
+    display: flex; 
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+
+   
+
+
+}
+.nav h1{
+	width: 30%; height: 10vh;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+   padding: 8px;
+  }
+
+.navber{
+
+	width:60%; height: 10vh;
+    list-style: none;
+    box-sizing: border-box;
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+    padding-right:20px;
+   
+	}
+.nav-item{
+	width: 20%; height: 5vh;
+	border: 0px solid white;
+	border-radius: 4%;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	background: blue;
+	font-weight: bold;
+	padding-left: 50px;}
+	
+
+.nav-motive{
+	width: 20%; height: 5vh;
+	border: 0px solid white;
+	border-radius: 4%;
+	padding: 5px;
+	padding-left: 50px;
+	display: flex;
+	align-items: center;
+	background: darkorange;
+}
+
+.nav-link{
+	text-decoration: none;
+	font-weight: bold;
+	word-spacing: 2px;
+	color: white;
+	
+}
+
+.animation{
+
+	font-family: main;
+     width: 100%;
+    height: 80vh;
+    display: flex; 
+	justify-content: center;
+	align-items: center;	
+    transform: translate(0px, 150px);
+    font-size:24px;
+    
+}
+
+
+
+
+
+
+
+.change_content:after{
+	content:'';
+	animation: changetext 10s infinite linear;
+	text-decoration: none; color:red;
+	word-spacing: 2px;
+}
+@keyframes changetext{
+	0%{content:"I am ";}
+	50%{content:"Are you also ";}
+	100%{content: "Let's be"}
+}
+.box{
+
+	width: 100%; height: 5vh;
+	background-color: orange;
+
+}
+.motive {
+	font-family: content;
+	height: 120vh;
+    align-content: center; 
+    margin:auto ;
+    margin-bottom: 0px;
+    padding: 10%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.motive h1{
+font-family: main;
+word-spacing: 10px;
+display: flex;
+justify-content: center;
+align-items:center;
+text-decoration: underline;
+font-weight: bold;
+font-size: 50px;
+
+}
+.motive h2{
+word-spacing: 5px;
+color: red;
+font-size: 32px;	
+}
+.motive h4{
+    font-size: 24px;
+	word-spacing: 2px;	
+}
+.center-content{
+	margin-top: 20px;
+  }
+
+.image{
+	background-image: url("motive/Untitled-2.png");
+	width: 50%; height:50vh;
+	float: left;
+	background-size: 140%, 200%;
+	background-repeat: no-repeat;
+
+}
+.content{
+	font-family: content;
+	font-size: 24px;
+	word-spacing: 2px;
+	width: 50%; height: 50vh;
+	float: right;
+	text-align: center;
+	
+		
+}
+.points{
+	
+    font-size: 28px;
+	word-spacing: 2px;
+	color: blue;
+	padding-left: 5px;
+			
+}
+
+
+
+
+.logo{
+	border-radius: 50%;
+	background-color: orange;
+	width: 80px;
+	height: 80px;
+
+}
+.logo img{
+	margin: 8px;
+	width: 60px; height: 60px;}
+.benifits{
+	font-family: content;
+    align-content: center; 
+    padding: 10%;
+    padding-top: 50px;
+	width: 100%; height: 120vh;
+	background-image: url('motive/background.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+
+}
+.benifits h2{
+word-spacing: 5px;
+color: orange;
+font-size: 38px;	
+}
+.box1{
+	position: relative;
+	width: 100%; height: 50px;
+	background-color: white;
+}
+.square{
+	position: absolute;
+	left: 45%; right: 45%;
+	bottom: 50%;
+	width: 50px; height:50px;
+	background-color:rgba(255, 0, 0, 1) ;
+	transform: rotate(45deg);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 850px) {
+
+ .image{
+float: none;
+padding-top: 20px;
+width: 100%; height: 45vh;	
+}
+.content{
+	float: none;
+	width: 100%; height: auto;	
+}
+.bgimg{
+	 width: 100%;
+    height: 48vh;}
+
+
+.nav h1{
+	
+	font-size: 20px;}
+
+.nav-link{
+	
+	font-weight: normal;
+	word-spacing: -5px;
+}
+.nav-item{
+	padding: 0px;
+	border: none;
+    background-color: transparent;}
+.animation{
+    word-spacing: 0px;
+    transform: translate(-10px, 60px);
+    font-size:18px;
+    
+}
+.benifits{
+	height: 150vh;
+	box-sizing: border-box;
+
+}
+.motive{
+	height: 200vh;
+}
+
+.logo{
+	border-radius: 50%;
+	background-color: whitesmoke;
+	width: 10px;
+	height: 10px;
+	
+}
+.benifits{
+	padding: 5%;
+    padding-top: 100px;
+	width: 100%; height: 150vh;
+
+}
+
+}
